@@ -1,9 +1,10 @@
-
+import pdb 
 import torch
 from torchvision import transforms
 from PIL import Image
 import torchvision.transforms.functional as TF
 
+pdb.set_trace()
 
 #1° Tranformacion de nuestro dato numphy a un tensor
 transform = transforms.Compose([
@@ -31,3 +32,4 @@ imagen_nueva =  transform(imagen_t)
 #imagen_nueva = (imagen_nueva * 255).round().astype(np.uint8)
 imagen_nueva.show()
 imagen_nueva.save("medio_perro.jpg")
+
